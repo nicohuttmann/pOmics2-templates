@@ -13,7 +13,7 @@ library(tidyverse)
 
 
 # ---- Load data image ----
-load("Data/RData/00.RData")
+load("Data/RData/01.RData")
 
 
 
@@ -51,4 +51,4 @@ get_variables_data(which = c("Potential.contaminant",
 
 
 # ---- Save data image ----
-save.image("Data/RData/01.RData")
+save.image("Data/RData/02.RData")

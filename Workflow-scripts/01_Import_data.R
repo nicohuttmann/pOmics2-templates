@@ -27,7 +27,7 @@ import_files(files = c("Data/proteinGroups.txt"))
 # ---- Dataset combined MQ search ----
 
 # Dataset1
-Datasets[["Dataset1"]] <-
+Datasets[["proteinGroups"]] <-
   import2new_dataset(raw.data = Info$Imports[["proteinGroups"]],
                      variable.identifiers = 
                        .strsplit_keep_first(`Protein.IDs`, split = ";"),
@@ -45,4 +45,4 @@ Datasets[["Dataset1"]] <-
 
 
 # ---- Save data image ----
-save.image("Data/RData/00.RData")
+save.image("Data/RData/01.RData")
