@@ -5,6 +5,9 @@
 #
 
 
+# ---- 
+install.packages("devtools")
+
 
 # ---- Check packages ---- 
 packages <- c("tidyverse", 
