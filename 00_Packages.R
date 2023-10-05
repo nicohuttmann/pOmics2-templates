@@ -16,7 +16,9 @@ packages <- c("tidyverse",
               "ggrepel", 
               "ggvenn", 
               "plotly", 
-              "Peptides")
+              "Peptides", 
+              "patchwork", 
+              "hexbin")
 
 (packages_installed <- 
     setNames(object = packages %in% rownames(installed.packages()), 
@@ -37,13 +39,15 @@ packages_bc <- c("clusterProfiler",
                  "ComplexHeatmap", 
                  "org.Hs.eg.db", 
                  "org.Mm.eg.db", 
-                 "GO.db")
+                 "GO.db", 
+                 "limma", 
+                 "vsn")
 
 (packages_bc_installed <- 
     setNames(object = packages_bc %in% rownames(installed.packages()), 
              nm = packages_bc))
 
-# Install packages from CRAN
+# Install packages from Bioconductor
 for (i in 1:length(packages_bc_installed)) {
   
   if (!packages_bc_installed[[i]])
